@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgtest" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="14dp"
+        android:text="အေဆာင္(က်ား/မ)"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/gender"
+        android:layout_marginTop="38dp"
+        android:text="တည္ေနရာ"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/location"
+        android:layout_marginTop="42dp"
+        android:text="အခန္းအမ်ိဳးအစား"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ToggleButton
+        android:id="@+id/roomtype"
+           style="@style/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignRight="@+id/location"
+         android:background="@drawable/roomtg_bg"  />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/roomtype"
+        android:layout_marginTop="46dp"
+        android:text="ေစ်းႏႈန္း"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginRight="22dp" >
+
+        <RadioButton
+            android:id="@+id/firstradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="၃၀၀၀၀ ေအာက္" />
+
+        <RadioButton
+            android:id="@+id/secondradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="၃၀၀၀၀ ႏွင့္ ၅၀၀၀၀ ၾကား" />
+
+        <RadioButton
+            android:id="@+id/thirdradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="၅၀၀၀၀ အထက္" />
+    </RadioGroup>
+
+    <ToggleButton
+        android:id="@+id/gender"
+        style="@style/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/radioGroup1"
+        android:layout_alignTop="@+id/textView1"
+        android:background="@drawable/gendertg_bg" />
+
+    <ToggleButton
+        android:id="@+id/location"
+        style="@style/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gender"
+        android:layout_below="@+id/gender"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/locationtg_bg" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/roomtype"
+        android:layout_below="@+id/radioGroup1"
+        android:src="@drawable/findf" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="@drawable/listselectorforfinal"
+    android:columnCount="1" >
+
+    <LinearLayout
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="0" 
+        >
+
+        <ImageView
+            android:id="@+id/ngaryoema"
+            android:layout_width="270dp"
+            android:layout_height="250dp"
+            />
+ 
+</LinearLayout>
+    <ToggleButton
+        android:id="@+id/nextbutton"
+        style="@style/toggleButton"
+        android:layout_column="0"
+        android:layout_gravity="right|center_vertical"
+        android:layout_row="0"
+        android:background="@drawable/nexttg_bg" />
+    
+    <ListView
+        android:id="@+id/listviewforviewimg"
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:layout_column="0"
+        android:layout_gravity="left|bottom"
+        android:layout_row="0" >
+
+    </ListView>
+
+</GridLayout>

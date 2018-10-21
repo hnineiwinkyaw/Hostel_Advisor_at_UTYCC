@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listselectorforfinal"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- ListRow Left sied Thumbnail image -->
+
+    <RelativeLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybg"
+        android:padding="3dip" >
+
+        <TextView
+            android:id="@+id/nameinphrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.15"
+            android:text="Sunshine"
+            android:textColor="#040404"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/extrainfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nameinphrow"
+            android:layout_below="@+id/nameinphrow"
+            android:text="Small Text"
+            android:textColor="#040404"
+            android:textSize="12dip"
+            android:typeface="sans" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/nameinphrow"
+            android:layout_marginRight="109dp"
+            android:src="@drawable/phforph" />
+
+        <TextView
+            android:id="@+id/phinphrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_marginLeft="26dp"
+            android:autoLink="phone"
+            android:linksClickable="true"
+            android:text="Small Text"
+            android:textColor="#040404"
+            android:textSize="13dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+
+</LinearLayout>

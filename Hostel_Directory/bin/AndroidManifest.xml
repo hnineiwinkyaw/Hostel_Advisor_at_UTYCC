@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hostel_directory"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.hostel_directory.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.hostel_directory.searchurhostel"
+            android:label="@string/app_name"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="com.example.hostel_directory.result"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.hostel_directory.hostelresultc"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.hostel_directory.resultpicview"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.hostel_directory.view"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.hostel_directory.Tabhostforph"
+            android:label="@string/title_activity_tabhostforph" >
+        </activity>
+        <activity
+            android:name="com.example.hostel_directory.Ict"
+            android:label="@string/title_activity_ict" >
+        </activity>
+        <activity
+            android:name="com.example.hostel_directory.Ece"
+            android:label="@string/title_activity_ece" >
+        </activity>
+        <activity
+            android:name="com.example.hostel_directory.Pre"
+            android:label="@string/title_activity_pre" >
+        </activity>
+        <activity
+            android:name="com.example.hostel_directory.Ame"
+            android:label="@string/title_activity_ame" >
+        </activity>
+        <activity
+            android:name="com.example.hostel_directory.Others"
+            android:label="@string/title_activity_others" >
+        </activity>
+          <activity
+            android:name="com.example.hostel_directory.workshop"
+            android:label="@string/title_activity_others" >
+        </activity>
+          <activity
+            android:name="com.example.hostel_directory.restaurant"
+            android:label="@string/title_activity_others" >
+        </activity>
+    </application>
+
+</manifest>

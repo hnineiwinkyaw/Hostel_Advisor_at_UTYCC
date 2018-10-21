@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/yccbg" >
+
+    <ImageButton
+        android:id="@+id/hayfirst"
+        android:layout_width="105dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/secondbutforph"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="33dp"
+        android:src="@drawable/hsharyanff" />
+
+    <ImageButton
+        android:id="@+id/secondbutforph"
+        android:layout_width="105dp"
+        android:layout_height="55dp"
+        android:layout_alignLeft="@+id/hayfirst"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/phff" />
+
+    <ImageButton
+        android:id="@+id/workshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hayfirst"
+        android:layout_marginLeft="56dp"
+        android:layout_toRightOf="@+id/hayfirst"
+        android:src="@drawable/bttg" />
+
+    <ImageButton
+        android:id="@+id/restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/workshop"
+        android:layout_alignTop="@+id/secondbutforph"
+        android:src="@drawable/bton" />
+
+</RelativeLayout>

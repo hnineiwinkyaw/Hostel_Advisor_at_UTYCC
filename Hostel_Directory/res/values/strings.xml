@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hostel_Directory</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_tabhostforph">Tabhostforph</string>
+    <string name="title_activity_ict">Ict</string>
+    <string name="title_activity_ece">Ece</string>
+    <string name="title_activity_pre">Pre</string>
+    <string name="title_activity_ame">Ame</string>
+    <string name="title_activity_others">Others</string>
+
+</resources>
